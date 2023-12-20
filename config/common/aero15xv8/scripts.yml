@@ -1,5 +1,5 @@
 type: script
 scripts:
-  - akmods --force --kernels "$(rpm -q "${KERNEL_NAME}" --queryformat '%{VERSION}-%{RELEASE}.%{ARCH}')" --kmod acpi_ec
   # this sets up the proper policy & signing files for signed images to work
   - signing.sh
+  - build-kmods.sh
