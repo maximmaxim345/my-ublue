@@ -2,6 +2,7 @@
 
 set -oue pipefail
 
+KERNEL_NAME="kernel"
 ARCH="$(rpm -E '%_arch')"
 KERNEL="$(rpm -q "${KERNEL_NAME}" --queryformat '%{VERSION}-%{RELEASE}.%{ARCH}')"
 RELEASE="$(rpm -E '%fedora')"
