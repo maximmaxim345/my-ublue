@@ -1,0 +1,15 @@
+# image will be published to ghcr.io/<user>/<name>
+name: kinoite-aero15xv8
+# description will be included in the image's metadata
+description: A Kinoite based image for the Gigabyte Aero 15Xv8 laptop
+
+# the base image to build on top of (FROM) and the version tag to use
+base-image: ghcr.io/ublue-os/kinoite-nvidia
+image-version: 39 # latest is also supported if you want new updates ASAP
+
+modules:
+  - from-file: common/aero15xv8/files.yml
+  - from-file: common/aero15xv8/packages.yml
+  - from-file: common/aero15xv8/bling.yml
+  - from-file: common/aero15xv8/yafti.yml
+  - from-file: common/aero15xv8/scripts.yml

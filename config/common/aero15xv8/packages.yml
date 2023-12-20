@@ -1,0 +1,14 @@
+type: rpm-ostree
+repos:
+  - https://copr.fedorainfracloud.org/coprs/maximmaxim345/nbfc-linux/repo/fedora-%OS_VERSION%/maximmaxim345-nbfc-linux-fedora-%OS_VERSION%.repo
+install:
+  - akmod-acpi_ec
+  - intel-undervolt
+  - nbfc-linux
+  - nbfc-linux-aero15xv8
+  - solaar
+  - wl-clipboard
+  - zsh
+remove:
+  - firefox # default firefox removed in favor of flatpak
+  - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
