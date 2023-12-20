@@ -39,7 +39,10 @@ jobs:
         # Add recipes for all the images you want to build here.
         # Don't add module configuration files, you will get errors.
         recipe:
-          - recipe.yml
+          - beyond-aero15xv8.yml
+          - bluefin-aero15xv8.yml
+          - kinoite-aero15xv8.yml
+          - silverblue-aero15xv8.yml
 # !!!
 
     steps:
