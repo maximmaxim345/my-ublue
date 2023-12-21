@@ -1,3 +1,4 @@
+# THIS IMAGE IS DISABLED FOR NOW
 # image will be published to ghcr.io/<user>/<name>
 name: beyond-aero15xv8
 # description will be included in the image's metadata
