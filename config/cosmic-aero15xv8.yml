@@ -1,5 +1,5 @@
 # image will be published to ghcr.io/<user>/<name>
-name: silverblue-aero15xv8
+name: cosmic-aero15xv8
 # description will be included in the image's metadata
 description: A COSMIC based image for the Gigabyte Aero 15Xv8 laptop, includes GNOME as fallback
 
