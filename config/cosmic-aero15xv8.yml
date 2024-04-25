@@ -1,0 +1,13 @@
+# image will be published to ghcr.io/<user>/<name>
+name: silverblue-aero15xv8
+# description will be included in the image's metadata
+description: A COSMIC based image for the Gigabyte Aero 15Xv8 laptop, includes GNOME as fallback
+
+# the base image to build on top of (FROM) and the version tag to use
+base-image: ghcr.io/ublue-os/cosmic-silverblue-nvidia
+image-version: 40 # latest is also supported if you want new updates ASAP
+
+modules:
+  - from-file: common/aero15xv8/files.yml
+  - from-file: common/aero15xv8/packages.yml
+  - from-file: common/aero15xv8/scripts.yml

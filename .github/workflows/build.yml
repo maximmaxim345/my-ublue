@@ -43,6 +43,7 @@ jobs:
           - bluefin-aero15xv8.yml
           - kinoite-aero15xv8.yml
           - silverblue-aero15xv8.yml
+          - cosmic-aero15xv8.yml
 # !!!
 
     steps:
